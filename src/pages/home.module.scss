@@ -1,1 +1,82 @@
-// TODO
+.mainWrapper {
+  margin: 0 auto;
+  padding-bottom: 48px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.listContainer {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.listContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    a {
+      text-decoration: none;
+      h1 {
+        color: var(--gray-50);
+        font-size: 28px;
+
+        transition: filter 0.2s;
+        &:hover {
+          filter: brightness(0.8);
+        }
+      }
+    }
+
+    p {
+      color: var(--gray-300);
+      font-size: 18px;
+    }
+  }
+
+  aside {
+    display: flex;
+    gap: 24px;
+
+    div {
+      display: flex;
+      gap: 8px;
+
+      time, span {
+        color: var(--gray-300);
+        font-size: 14px;
+        text-transform: capitalize;
+      }
+
+      svg {
+        color: var(--gray-300);
+      }
+    }
+  }
+}
+
+.loadPostsButton {
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+
+  color: var(--pink-500);
+  font-weight: 600;
+  font-size: 18px;
+
+  transition: filter 0.2s;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(0.8);
+  }
+}

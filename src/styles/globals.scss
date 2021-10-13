@@ -4,4 +4,25 @@
   padding: 0;
 }
 
-// TODO
+:root {
+  --pink-500: #FF57B2;
+  --gray-50: #F8F8F8;
+  --gray-900: #1A1D23;
+  --gray-500: #BBBBBB;
+  --gray-300: #D7D7D7;
+}
+
+html {
+  min-height: 100%;
+  background-color: var(--gray-900);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+p, span, strong, time, ul, li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
